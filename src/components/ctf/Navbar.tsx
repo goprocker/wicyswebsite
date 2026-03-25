@@ -22,7 +22,7 @@ export default function Navbar() {
       {/* Left: Logo */}
       <Link href="/obscura" style={{ display: "flex", alignItems: "center", gap: "0.75rem", textDecoration: "none" }}>
         <Image 
-          src="/ctf/Wicys%20Logo.png" 
+          src="/ctf/wicys-logo.png" 
           alt="WiCyS Logo" 
           width={200}
           height={70}
