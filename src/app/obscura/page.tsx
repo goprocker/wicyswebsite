@@ -5,8 +5,7 @@ import Image from "next/image";
 import { useRef } from "react";
 import Navbar from "@/components/ctf/Navbar";
 import Countdown from "@/components/ctf/Countdown";
-import Gallery from "@/components/ctf/Gallery";
-import Flipbook from "@/components/ctf/Flipbook";
+import SacredCodex from "@/components/ctf/SacredCodex";
 import Sponsors from "@/components/ctf/Sponsors";
 import ArcaneOrders from "@/components/ctf/ArcaneOrders";
 import Treasures from "@/components/ctf/Treasures";
@@ -23,24 +22,6 @@ export default function Home() {
     <main ref={containerRef}>
       <Navbar />
 
-      {/* Social Sidebar */}
-      <div className="social-sidebar">
-        <a href="https://www.instagram.com/wicys_sathyabama/" target="_blank" rel="noopener noreferrer" className="social-icon" title="Instagram">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-          </svg>
-        </a>
-        <a href="https://www.linkedin.com/company/wicys-sathyabama-student-chapter/" target="_blank" rel="noopener noreferrer" className="social-icon" title="LinkedIn">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-            <rect x="2" y="9" width="4" height="12"></rect>
-            <circle cx="4" cy="4" r="2"></circle>
-          </svg>
-        </a>
-        <a href="#" className="social-icon">▶</a>
-      </div>
 
       {/* Hero Section */}
       <section className="section-container" style={{ minHeight: "100vh", paddingTop: "100px" }}>
@@ -66,7 +47,7 @@ export default function Home() {
             marginBottom: "4rem",
             backdropFilter: "blur(10px)",
           }}>
-            <Link href="/obscura/tickets" style={{
+            <div style={{
               color: "var(--color-cream)",
               textDecoration: "none",
               fontSize: "0.7rem",
@@ -79,7 +60,7 @@ export default function Home() {
             }}>
               <span style={{ color: "var(--color-orange)" }}>●</span>
               April 10, Sathyabama Institute Of Science & Technology
-            </Link>
+            </div>
           </div>
 
           {/* Main Title Banner */}
@@ -213,10 +194,10 @@ export default function Home() {
             gap: "1.5rem"
           }}>
             <p>
-              <strong style={{ color: "var(--color-cream)", fontWeight: 700, fontSize: "1.2rem" }}>OBSCURA</strong> is the new unified identity of <span style={{ color: "var(--color-orange)" }}>Samgatha × Vashisht</span> — the flagship techno-cultural fest of Sathyabama Institute of Science and Technology. It is the collision of innovation and tradition, engineering and artistry, where 5,000+ minds from premier institutions ignite five days of code, creativity, and culture.
+              Step into the Chamber of Codes. <strong style={{ color: "var(--color-cream)", fontWeight: 700, fontSize: "1.2rem" }}>OBSCURA</strong>, hosted by WiCyS Sathyabama, is a high-stakes, Harry Potter-inspired CTF designed to test the limits of logic and creativity in a single-day sprint. 
             </p>
             <p style={{ color: "var(--color-text-secondary)" }}>
-              Under the banner of the theme of this year <strong style={{ color: "var(--color-gold)" }}>Capture The Flag</strong>, this edition transcends time itself — where the ancient meets the futuristic in a spectacle unlike any other.
+              This flagship challenge at Sathyabama Institute of Science and Technology invites participants to bridge the gap between technical expertise and magical strategy. From solving ancient riddles in the script to mastering modern cybersecurity charms, <strong style={{ color: "var(--color-gold)" }}>OBSCURA</strong> is the ultimate quest for the next generation of tech-wizards.
             </p>
           </div>
         </motion.div>
@@ -226,9 +207,9 @@ export default function Home() {
       <section className="section-container" style={{ padding: "8rem 2rem", position: "relative" }}>
         <div style={{ maxWidth: 1000, width: "100%", display: "flex", flexDirection: "column", gap: "2rem" }}>
           <motion.h2 
-            initial={{ opacity: 0, y: 80 }}
+            initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false }}
+            viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8 }}
             style={{
               fontFamily: "var(--font-heading)",
@@ -242,9 +223,9 @@ export default function Home() {
           </motion.h2>
 
           <motion.div
-            initial={{ opacity: 0, y: 100 }}
+            initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false }}
+            viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, delay: 0.2 }}
             style={{
               fontFamily: "var(--font-body)",
@@ -268,19 +249,23 @@ export default function Home() {
             </p>
             
             <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap", marginTop: "1rem" }}>
-              <Link href="/obscura/events" className="btn-primary btn-outline" style={{ borderImage: "linear-gradient(135deg, #FF8C00, #c41e3a) 1" }}>
-                EXPLORE EVENTS
-              </Link>
-              <a href="#" className="btn-primary btn-outline" style={{ background: "rgba(0,0,0,0.5)" }}>
+              <motion.a 
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdnJAA2mZ2gkSvCnmJVnFIskNTadKVgFhnb2nWl01rmhbvF4A/viewform" target="_blank" rel="noopener noreferrer" className="btn-primary btn-outline" style={{ borderImage: "linear-gradient(135deg, #FF8C00, #c41e3a) 1" }}>
+                REGISTER NOW
+              </motion.a>
+              <motion.a 
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                href="#" className="btn-primary btn-outline" style={{ background: "rgba(0,0,0,0.5)" }}>
                 DOWNLOAD EVENTS BROCHURE
-              </a>
+              </motion.a>
             </div>
           </motion.div>
         </div>
       </section>
 
-      {/* Gallery Section */}
-      <Gallery />
 
       {/* Arcane Orders Section */}
       <ArcaneOrders />
@@ -288,16 +273,22 @@ export default function Home() {
       {/* Treasures Section */}
       <Treasures />
 
-      {/* Flipbook Section */}
+      {/* Rules Section */}
       <section style={{ padding: "4rem 2rem", position: "relative", zIndex: 1 }}>
-        <Flipbook />
+        <SacredCodex />
       </section>
 
       {/* Sponsors Section */}
       <Sponsors />
 
       {/* Portal/QR Code Section */}
-      <section style={{ padding: "6rem 2rem", position: "relative", zIndex: 1, display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center" }}>
+      <motion.section 
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
+        transition={{ duration: 0.8 }}
+        style={{ padding: "6rem 2rem", position: "relative", zIndex: 1, display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center" }}
+      >
         <h2 style={{
           fontFamily: "var(--font-heading)",
           fontSize: "clamp(2rem, 5vw, 3.5rem)",
@@ -320,15 +311,20 @@ export default function Home() {
           SCAN TO CLAIM YOUR PLACE IN THE FORBIDDEN CIPHER
         </div>
 
-        <div style={{
-          background: "var(--color-cream)",
-          padding: "1rem",
-          borderRadius: "16px",
-          position: "relative",
-          marginBottom: "2rem",
-          boxShadow: "0 0 30px rgba(212,138,32,0.3)",
-          display: "inline-block"
-        }}>
+        <motion.div 
+          whileHover={{ scale: 1.05, rotateZ: 2 }}
+          transition={{ type: "spring", stiffness: 300 }}
+          style={{
+            background: "var(--color-cream)",
+            padding: "1rem",
+            borderRadius: "16px",
+            position: "relative",
+            marginBottom: "2rem",
+            boxShadow: "0 0 30px rgba(212,138,32,0.3)",
+            display: "inline-block",
+            cursor: "zoom-in"
+          }}
+        >
           {/* Decorative corners */}
           <div style={{ position: "absolute", top: "10px", left: "10px", width: "20px", height: "20px", borderTop: "3px solid #d48a20", borderLeft: "3px solid #d48a20" }}></div>
           <div style={{ position: "absolute", top: "10px", right: "10px", width: "20px", height: "20px", borderTop: "3px solid #d48a20", borderRight: "3px solid #d48a20" }}></div>
@@ -344,7 +340,7 @@ export default function Home() {
               style={{ borderRadius: "8px", display: "block" }}
             />
           </div>
-        </div>
+        </motion.div>
 
         <div style={{
           fontFamily: "var(--font-decorative)",
@@ -355,7 +351,9 @@ export default function Home() {
           ✦ Scan to Register ✦
         </div>
 
-        <a 
+        <motion.a 
+          whileHover={{ scale: 1.1, boxShadow: "0 0 30px rgba(212, 138, 32, 0.5)" }}
+          whileTap={{ scale: 0.95 }}
           href="https://docs.google.com/forms/d/e/1FAIpQLSdnJAA2mZ2gkSvCnmJVnFIskNTadKVgFhnb2nWl01rmhbvF4A/viewform"
           target="_blank"
           rel="noopener noreferrer"
@@ -371,7 +369,7 @@ export default function Home() {
           }}
         >
           ✦ Register Now ✦
-        </a>
+        </motion.a>
 
         <div style={{
           fontSize: "0.7rem",
@@ -383,7 +381,7 @@ export default function Home() {
         }}>
           https://docs.google.com/forms/d/e/1FAIpQLSdnJAA2mZ2gkSvCnmJVnFIskNTadKVgFhnb2nWl01rmhbvF4A/viewform
         </div>
-      </section>
+      </motion.section>
 
       {/* Footer */}
       <Footer />

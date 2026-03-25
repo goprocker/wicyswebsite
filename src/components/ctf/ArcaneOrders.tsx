@@ -78,6 +78,12 @@ export default function ArcaneOrders() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
+            whileHover={{ 
+              scale: 1.03, 
+              borderColor: "rgba(212, 138, 32, 0.4)",
+              boxShadow: "0 10px 40px rgba(0,0,0,0.4)"
+            }}
+            whileTap={{ scale: 0.98 }}
             transition={{ delay: i * 0.1, duration: 0.6 }}
             style={{
               background: "rgba(10, 5, 20, 0.6)",
@@ -88,17 +94,7 @@ export default function ArcaneOrders() {
               flexDirection: "column",
               gap: "1.5rem",
               backdropFilter: "blur(10px)",
-              transition: "all 0.3s ease",
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.borderColor = "rgba(212, 138, 32, 0.3)";
-              e.currentTarget.style.transform = "translateY(-5px)";
-              e.currentTarget.style.boxShadow = "0 10px 40px rgba(0,0,0,0.6)";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.borderColor = "rgba(255, 255, 255, 0.08)";
-              e.currentTarget.style.transform = "translateY(0)";
-              e.currentTarget.style.boxShadow = "none";
+              cursor: "pointer",
             }}
           >
             <div style={{ display: "flex", gap: "1.5rem", alignItems: "flex-start" }}>

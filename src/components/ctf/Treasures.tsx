@@ -46,6 +46,12 @@ export default function Treasures() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
+          whileHover={{ 
+            scale: 1.05, 
+            borderColor: "rgba(212, 138, 32, 0.6)",
+            boxShadow: "0 10px 40px rgba(212, 138, 32, 0.2)"
+          }}
+          whileTap={{ scale: 0.98 }}
           transition={{ delay: 0.1, duration: 0.6 }}
           style={{
             background: "rgba(10, 5, 20, 0.6)",
@@ -101,6 +107,12 @@ export default function Treasures() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
+          whileHover={{ 
+            scale: 1.05, 
+            borderColor: "rgba(255, 255, 255, 0.2)",
+            boxShadow: "0 10px 40px rgba(255, 255, 255, 0.1)"
+          }}
+          whileTap={{ scale: 0.98 }}
           transition={{ delay: 0.2, duration: 0.6 }}
           style={{
             background: "rgba(10, 5, 20, 0.6)",
@@ -112,7 +124,7 @@ export default function Treasures() {
             alignItems: "center",
             gap: "1rem",
             backdropFilter: "blur(10px)",
-            transition: "all 0.3s ease",
+            cursor: "pointer",
           }}
         >
           <div style={{ fontSize: "3rem", marginBottom: "0.5rem" }}>🥈</div>
@@ -155,6 +167,12 @@ export default function Treasures() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
+          whileHover={{ 
+            scale: 1.05, 
+            borderColor: "rgba(205, 127, 50, 0.3)",
+            boxShadow: "0 10px 40px rgba(205, 127, 50, 0.1)"
+          }}
+          whileTap={{ scale: 0.98 }}
           transition={{ delay: 0.3, duration: 0.6 }}
           style={{
             background: "rgba(10, 5, 20, 0.6)",

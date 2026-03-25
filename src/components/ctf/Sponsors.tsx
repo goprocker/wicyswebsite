@@ -68,7 +68,12 @@ export default function Sponsors() {
         }}>
           Title Sponsor
         </div>
-        <div className="sponsor-card-title">
+        <motion.div 
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.98 }}
+          className="sponsor-card-title"
+          style={{ cursor: "pointer" }}
+        >
           <div style={{
             background: "#fff", borderRadius: 12, padding: "1.5rem 3rem",
             display: "inline-block",
@@ -81,7 +86,7 @@ export default function Sponsors() {
               {titleSponsor.name}
             </span>
           </div>
-        </div>
+        </motion.div>
       </motion.div>
 
       {/* Partners Grid */}
@@ -116,7 +121,12 @@ export default function Sponsors() {
             }}>
               {p.category}
             </div>
-            <div className="sponsor-card" style={{ minHeight: 100 }}>
+            <motion.div 
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.98 }}
+              className="sponsor-card" 
+              style={{ minHeight: 100, cursor: "pointer" }}
+            >
               <div style={{
                 background: "#fff", borderRadius: 8, padding: "0.8rem 1.5rem",
                 display: "inline-block",
@@ -128,7 +138,7 @@ export default function Sponsors() {
                   {p.name}
                 </span>
               </div>
-            </div>
+            </motion.div>
           </motion.div>
         ))}
       </motion.div>
@@ -167,10 +177,16 @@ export default function Sponsors() {
           }}
         >
           {previousSponsors.map((name) => (
-            <motion.div key={name} variants={{
-              hidden: { opacity: 0, scale: 0.8 },
-              visible: { opacity: 1, scale: 1 }
-            }} className="sponsor-card" style={{ padding: "1rem", minHeight: 70 }}>
+            <motion.div 
+              key={name} 
+              variants={{
+                hidden: { opacity: 0, scale: 0.8 },
+                visible: { opacity: 1, scale: 1 }
+              }} 
+              whileHover={{ scale: 1.1, backgroundColor: "rgba(255, 255, 255, 0.08)" }}
+              className="sponsor-card" 
+              style={{ padding: "1rem", minHeight: 70, cursor: "pointer" }}
+            >
               <span style={{
                 fontFamily: "var(--font-heading)", fontSize: "0.75rem",
                 fontWeight: 600, color: "var(--color-text-secondary)",
