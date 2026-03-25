@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import "./globals.css";
 import SmoothScrollProvider from "@/components/ui/SmoothScroll";
+import BackgroundMusic from "@/components/ctf/BackgroundMusic";
 
 export const metadata: Metadata = {
   title: "OBSCURA: The Forbidden Cipher | WiCyS CTF",
@@ -9,8 +10,6 @@ export const metadata: Metadata = {
     "OBSCURA — A Magical Capture The Flag Experience. Enter the realm where ancient ciphers meet modern cybersecurity. Register now for the ultimate CTF challenge.",
   keywords: ["OBSCURA", "CTF", "Capture The Flag", "WiCyS", "Sathyabama", "cybersecurity", "competition"],
 };
-
-import BackgroundMusic from "@/components/ctf/BackgroundMusic";
 
 export default function RootLayout({
   children,
