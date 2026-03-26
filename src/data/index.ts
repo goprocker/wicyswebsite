@@ -102,6 +102,46 @@ export const events: Event[] = [
       "Learn to gather, analyze, and act on cyber threat intelligence using open-source platforms and OSINT techniques.",
     status: "upcoming",
   },
+  {
+    id: "11",
+    title: "Hello World",
+    category: "workshop",
+    date: "Coming Soon",
+    description: "A beginner-friendly workshop to kickstart your cybersecurity journey.",
+    status: "upcoming",
+  },
+  {
+    id: "12",
+    title: "Gatekeepers",
+    category: "hackathon",
+    date: "Coming Soon",
+    description: "Defend the digital fortress - a cybersecurity challenge event.",
+    status: "upcoming",
+  },
+  {
+    id: "13",
+    title: "Antigravity",
+    category: "technical",
+    date: "Coming Soon",
+    description: "Breaking barriers in cybersecurity with advanced techniques.",
+    status: "upcoming",
+  },
+  {
+    id: "14",
+    title: "Explorer",
+    category: "workshop",
+    date: "Coming Soon",
+    description: "Explore the unknown realms of ethical hacking and penetration testing.",
+    status: "upcoming",
+  },
+  {
+    id: "15",
+    title: "Outsiders",
+    category: "competition",
+    date: "Coming Soon",
+    description: "A competitive event for the outside-the-box thinkers.",
+    status: "upcoming",
+  },
 ];
 
 export const teamMembers: TeamMember[] = [
