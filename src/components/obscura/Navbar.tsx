@@ -20,7 +20,7 @@ export default function Navbar() {
       }}
     >
       {/* Left: Logo */}
-      <Link href="/obscura" style={{ display: "flex", alignItems: "center", gap: "0.75rem", textDecoration: "none" }}>
+      <Link href="/" style={{ display: "flex", alignItems: "center", gap: "0.75rem", textDecoration: "none" }}>
         <Image 
           src="/ctf/wicys-logo.png" 
           alt="WiCyS Logo" 

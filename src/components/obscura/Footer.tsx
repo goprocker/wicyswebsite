@@ -91,7 +91,7 @@ export default function Footer() {
                   Tamil Nadu, India
                 </span>
               </div>
-              <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer" style={{
+              <a href="https://www.google.com/maps/place/Sathyabama+University/@12.8728861,80.2235017,17z/data=!3m1!4b1!4m6!3m5!1s0x3a525b8c90befe2b:0x170ab8b5b21bb530!8m2!3d12.8728809!4d80.2260766!16zL20vMDcxZGNm?authuser=1&entry=ttu&g_ep=EgoyMDI2MDMyMy4xIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" style={{
                 display: "flex", alignItems: "center", gap: "1rem", color: "var(--color-text-secondary)", textDecoration: "none", fontSize: "0.9rem", fontWeight: "bold", marginTop: "0.5rem", letterSpacing: "0.1em", transition: "color 0.3s"
               }}>
                 <MapPin size={18} />

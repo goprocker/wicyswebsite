@@ -57,33 +57,6 @@ export const events: Event[] = [
     status: "past",
   },
   {
-    id: "6",
-    title: "Incident Response & Digital Forensics",
-    category: "lecture",
-    date: "August 22, 2025",
-    description:
-      "Real-world case studies on how organizations handle security breaches and perform forensic investigations.",
-    status: "past",
-  },
-  {
-    id: "7",
-    title: "Malware Analysis Bootcamp",
-    category: "technical",
-    date: "September 14, 2025",
-    description:
-      "Static and dynamic malware analysis techniques using sandboxed environments and reverse engineering tools.",
-    status: "past",
-  },
-  {
-    id: "8",
-    title: "Cloud Security Essentials",
-    category: "workshop",
-    date: "October 9, 2025",
-    description:
-      "AWS and Azure security configurations, IAM best practices, and cloud-native threat detection strategies.",
-    status: "past",
-  },
-  {
     id: "9",
     title: "OBSCURA – Capture The Flag",
     category: "hackathon",
@@ -92,15 +65,6 @@ export const events: Event[] = [
       "A magical CTF experience blending cryptography, steganography, and web exploitation challenges in an enchanted theme.",
     status: "past",
     highlight: true,
-  },
-  {
-    id: "10",
-    title: "Threat Intelligence Workshop",
-    category: "workshop",
-    date: "March 20, 2025",
-    description:
-      "Learn to gather, analyze, and act on cyber threat intelligence using open-source platforms and OSINT techniques.",
-    status: "past",
   },
   {
     id: "11",

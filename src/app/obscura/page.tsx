@@ -2,13 +2,13 @@
 import { motion, useScroll } from "framer-motion";
 import Image from "next/image";
 import { useRef } from "react";
-import Navbar from "@/components/ctf/Navbar";
-import Countdown from "@/components/ctf/Countdown";
-import SacredCodex from "@/components/ctf/SacredCodex";
-import Sponsors from "@/components/ctf/Sponsors";
-import ArcaneOrders from "@/components/ctf/ArcaneOrders";
-import Treasures from "@/components/ctf/Treasures";
-import Footer from "@/components/ctf/Footer";
+import Navbar from "@/components/obscura/Navbar";
+import Countdown from "@/components/obscura/Countdown";
+import SacredCodex from "@/components/obscura/SacredCodex";
+import Sponsors from "@/components/obscura/Sponsors";
+import ArcaneOrders from "@/components/obscura/ArcaneOrders";
+import Treasures from "@/components/obscura/Treasures";
+import Footer from "@/components/obscura/Footer";
 
 export default function Home() {
   const containerRef = useRef(null);
@@ -57,8 +57,11 @@ export default function Home() {
               gap: "0.5rem",
               textTransform: "uppercase",
             }}>
-              <span style={{ color: "var(--color-orange)" }}>●</span>
-              April 10, Sathyabama Institute Of Science & Technology
+             <span style={{ color: "var(--color-orange)" }}>●</span>
+             April 10, Dr. Remibai Jeppiaar Auditorium, Sathyabama Institute of Science and Technology
+             <div style={{ marginTop: "0.5rem", fontSize: "0.9rem", color: "var(--color-cream)" }}>
+                 🕘 9:00 AM - 6:00 PM
+             </div>
             </div>
           </div>
 
@@ -159,6 +162,36 @@ export default function Home() {
             style={{ marginTop: "1rem" }}
           >
             <Countdown />
+          </motion.div>
+
+          {/* Register Button */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1, duration: 0.8 }}
+            style={{ marginTop: "2rem" }}
+          >
+            <a
+              href="#open-the-portal"
+              style={{
+                display: "inline-block",
+                padding: "1rem 3rem",
+                background: "linear-gradient(135deg, #dc2626 0%, #fb923c 100%)",
+                border: "1px solid rgba(251, 146, 60, 0.5)",
+                borderRadius: "8px",
+                color: "#fef3c7",
+                fontFamily: "var(--font-heading)",
+                fontSize: "1rem",
+                fontWeight: 700,
+                textTransform: "uppercase",
+                letterSpacing: "0.1em",
+                textDecoration: "none",
+                boxShadow: "0 4px 20px rgba(220, 38, 38, 0.4)",
+                transition: "all 0.3s ease",
+              }}
+            >
+              Register Now
+            </a>
           </motion.div>
         </motion.div>
       </section>
@@ -296,7 +329,7 @@ export default function Home() {
           marginBottom: "0.5rem",
           letterSpacing: "0.05em",
           textShadow: "0 2px 10px rgba(0,0,0,0.8)"
-        }}>
+        }} id="open-the-portal">
           Open the Portal
         </h2>
         <div style={{

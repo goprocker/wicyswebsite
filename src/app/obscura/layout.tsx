@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import "./globals.css";
 import SmoothScrollProvider from "@/components/ui/SmoothScroll";
-import BackgroundMusic from "@/components/ctf/BackgroundMusic";
+import BackgroundMusic from "@/components/obscura/BackgroundMusic";
 
 export const metadata: Metadata = {
   title: "OBSCURA: The Forbidden Cipher | WiCyS CTF",
