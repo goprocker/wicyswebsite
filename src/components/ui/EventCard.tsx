@@ -17,6 +17,9 @@ const categoryColors: Record<string, string> = {
   lecture: "text-purple-400 bg-purple-400/10 border-purple-400/30",
   hackathon: "text-green-400 bg-green-400/10 border-green-400/30",
   technical: "text-orange-400 bg-orange-400/10 border-orange-400/30",
+  competition: "text-pink-400 bg-pink-400/10 border-pink-400/30",
+  discussion: "text-cyan-400 bg-cyan-400/10 border-cyan-400/30",
+  "guest lecture": "text-amber-400 bg-amber-400/10 border-amber-400/30",
 };
 
 const categoryIcons: Record<string, string> = {
@@ -24,6 +27,9 @@ const categoryIcons: Record<string, string> = {
   lecture: "🎤",
   hackathon: "💻",
   technical: "⚙️",
+  competition: "🏆",
+  discussion: "💬",
+  "guest lecture": "🌟",
 };
 
 export function EventCard({
@@ -54,18 +60,24 @@ export function EventCard({
             {categoryIcons[category] || "🔒"}
           </span>
         </div>
-        <div
-          className={cn(
-            "absolute inset-0 opacity-10 group-hover:opacity-20 transition-opacity duration-300",
-            category === "hackathon"
-              ? "bg-gradient-to-br from-green-500 to-teal-600"
-              : category === "workshop"
-              ? "bg-gradient-to-br from-blue-500 to-indigo-600"
-              : category === "lecture"
-              ? "bg-gradient-to-br from-purple-500 to-pink-600"
-              : "bg-gradient-to-br from-orange-500 to-red-600"
-          )}
-        />
+          <div
+            className={cn(
+              "absolute inset-0 opacity-10 group-hover:opacity-20 transition-opacity duration-300",
+              category === "hackathon"
+                ? "bg-gradient-to-br from-green-500 to-teal-600"
+                : category === "workshop"
+                ? "bg-gradient-to-br from-blue-500 to-indigo-600"
+                : category === "lecture"
+                ? "bg-gradient-to-br from-purple-500 to-pink-600"
+                : category === "competition"
+                ? "bg-gradient-to-br from-pink-500 to-rose-600"
+                : category === "discussion"
+                ? "bg-gradient-to-br from-cyan-500 to-blue-600"
+                : category === "guest lecture"
+                ? "bg-gradient-to-br from-amber-500 to-yellow-600"
+                : "bg-gradient-to-br from-orange-500 to-red-600"
+            )}
+          />
         {highlight && (
           <div className="absolute top-3 right-3 px-2 py-1 bg-amber-500 text-dark-900 text-xs font-bold rounded-full">
             ✦ Featured
