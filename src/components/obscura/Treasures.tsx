@@ -92,7 +92,7 @@ export default function Treasures() {
             textAlign: "center",
             lineHeight: 1.6,
           }}>
-            + Certificates & Vouchers for all participants
+            + Certificates & Vouchers
           </div>
         </motion.div>
       </div>

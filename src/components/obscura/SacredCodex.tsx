@@ -95,47 +95,95 @@ export default function SacredCodex() {
            gap: "0.5rem",
            cursor: "default"
          }}
-       >
-         {rules.map((rule, index) => {
-           // Determine the type of rule for styling
-           const isSectionHeader = ["Event Overview", "Team Formation Rules", "Requirements", "Prohibited Actions"].includes(rule);
-           const isEmpty = rule === "";
-           const isBulletPoint = rule.startsWith("•");
-           
-           return (
-             <motion.div
-               key={index}
-               initial={{ opacity: 0, y: isEmpty ? 0 : 20 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: false }}
-               transition={{ delay: index * 0.05, duration: 0.5 }}
-               style={{
-                 display: "flex",
-                 flexDirection: "column",
-                 gap: isEmpty ? "0.25rem" : isSectionHeader ? "0.75rem" : "0.5rem",
-                 alignItems: "center"
-               }}
-             >
-               {!isEmpty && (
-                 <p style={{
-                   fontFamily: "var(--font-heading)",
-                   fontSize: isSectionHeader ? "1.25rem" : "1.1rem",
-                   fontWeight: isSectionHeader ? 800 : 600,
-                   color: isSectionHeader ? "#f39c12" : "rgba(255, 255, 255, 0.9)",
-                   letterSpacing: isSectionHeader ? "0.03em" : "0",
-                   textTransform: isSectionHeader ? "none" : "none",
-                   margin: 0,
-                   lineHeight: 1.4,
-                   textAlign: isSectionHeader ? "center" : "left",
-                   paddingLeft: isBulletPoint ? "2rem" : 0,
-                   paddingRight: isBulletPoint ? "1rem" : 0
-                 }}>
-                   {rule}
-                 </p>
-               )}
-             </motion.div>
-           );
-         })}
+        >
+          {rules.map((rule, index) => {
+            // Determine the type of rule for styling
+            const isSectionHeader = ["Event Overview", "Team Formation Rules", "Requirements", "Prohibited Actions"].includes(rule);
+            const isEmpty = rule === "";
+            const isBulletPoint = rule.startsWith("•");
+            
+            return (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: isEmpty ? 0 : 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: false }}
+                transition={{ delay: index * 0.05, duration: 0.5 }}
+                style={{
+                  display: "flex",
+                  width: "100%",
+                  gap: isEmpty ? "0.25rem" : isSectionHeader ? "1rem" : "0.75rem",
+                  alignItems: "flex-start"
+                }}
+              >
+                {!isEmpty && (
+                  <div style={{
+                    width: "100%",
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "0.25rem"
+                  }}>
+                    {!isSectionHeader && isBulletPoint && (
+                      <div style={{
+                        display: "flex",
+                        alignItems: "flex-start",
+                        marginBottom: "0.25rem"
+                      }}>
+                        <span style={{ 
+                          fontFamily: "var(--font-heading)",
+                          fontSize: "1.1rem",
+                          fontWeight: 600,
+                          color: "rgba(255, 255, 255, 0.9)",
+                          marginRight: "0.75rem",
+                          flexShrink: 0
+                        }}>•</span>
+                        <p style={{
+                          fontFamily: "var(--font-heading)",
+                          fontSize: "1.1rem",
+                          fontWeight: 600,
+                          color: "rgba(255, 255, 255, 0.9)",
+                          margin: 0,
+                          lineHeight: 1.4,
+                          textAlign: "left"
+                        }}>
+                          {rule.substring(2)}
+                        </p>
+                      </div>
+                    )}
+                    {!isSectionHeader && !isBulletPoint && (
+                      <p style={{
+                        fontFamily: "var(--font-heading)",
+                        fontSize: "1.1rem",
+                        fontWeight: 600,
+                        color: "rgba(255, 255, 255, 0.9)",
+                        margin: 0,
+                        lineHeight: 1.4,
+                        textAlign: "left"
+                      }}>
+                        {rule}
+                      </p>
+                    )}
+                    {isSectionHeader && (
+                      <div style={{ marginBottom: "0.5rem" }}>
+                        <p style={{
+                          fontFamily: "var(--font-heading)",
+                          fontSize: "1.25rem",
+                          fontWeight: 800,
+                          color: "#f39c12",
+                          letterSpacing: "0.03em",
+                          margin: 0,
+                          lineHeight: 1.4,
+                          textAlign: "left"
+                        }}>
+                          {rule}
+                        </p>
+                      </div>
+                    )}
+                  </div>
+                )}
+              </motion.div>
+            );
+          })}
        </motion.div>
 
       {/* Footer link style from image (optional addition) */}
