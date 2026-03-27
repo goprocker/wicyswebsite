@@ -4,10 +4,7 @@ import { motion } from "framer-motion";
 const titleSponsor = { name: "RIKŪN", color: "#1a1a6e" };
 
 const partners = [
-  { category: "Sound Partner", name: "ZEBRONICS" },
   { category: "Events Partner", name: "RedTeam Hacker Academy", logo: "/logo/Rdteamlogo.jpeg" },
-  { category: "Platform Partner", name: "Unstop" },
-  { category: "Banking Partner", name: "PNB" },
   { category: "Rewards Sponsor", name: "NERDS LAB", logo: "/logo/nerdlabs.png" },
   { category: "Community Sponsor", name: "Loopfound", logo: "/logo/loopfound%20logo.jpg" },
 ];
@@ -119,29 +116,24 @@ export default function Sponsors() {
           style={{ display: "flex", alignItems: "center", cursor: "pointer" }}
           >
             <div style={{
-              background: "#fff", 
-              borderRadius: 8, 
-              padding: "0.8rem 1.5rem",
-              display: "inline-block",
-              textAlign: "center",
-              width: "120px"
+              background: "rgba(255, 255, 255, 0.9)",
+              borderRadius: 8,
+              padding: "1rem 1.5rem",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+              minWidth: "150px",
+              minHeight: "80px",
             }}>
               {p.logo ? (
-                <div style={{
-                  background: "rgba(0, 0, 0, 0.3)",
-                  borderRadius: "12px",
-                  padding: "1rem",
-                  display: "inline-block",
-                  minWidth: "120px"
-                }}>
-                  <img 
-                    src={p.logo} 
-                    alt={`${p.name} logo`}
-                    width={100}
-                    height={60}
-                    style={{ objectFit: 'contain', display: 'block', margin: '0 auto' }}
-                  />
-                </div>
+                <img 
+                  src={p.logo} 
+                  alt={`${p.name} logo`}
+                  width={120}
+                  height={70}
+                  style={{ objectFit: 'contain' }}
+                />
               ) : (
                 <span style={{
                   fontFamily: "var(--font-heading)", 
