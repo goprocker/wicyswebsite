@@ -5,9 +5,11 @@ const titleSponsor = { name: "RIKŪN", color: "#1a1a6e" };
 
 const partners = [
   { category: "Sound Partner", name: "ZEBRONICS" },
-  { category: "Events Partner", name: "Lightcast" },
+  { category: "Events Partner", name: "RedTeam Hacker Academy", logo: "/logo/Rdteamlogo.jpeg" },
   { category: "Platform Partner", name: "Unstop" },
   { category: "Banking Partner", name: "PNB" },
+  { category: "Rewards Sponsor", name: "NERDS LAB", logo: "/logo/nerdlabs.png" },
+  { category: "Community Sponsor", name: "Loopfound", logo: "/logo/loopfound%20logo.jpg" },
 ];
 
 const previousSponsors = [
@@ -103,47 +105,51 @@ export default function Sponsors() {
         }}
         style={{
           maxWidth: 1100, margin: "3rem auto",
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
-          gap: "1.5rem",
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "center",
+          gap: "2rem",
         }}
       >
         {partners.map((p) => (
           <motion.div key={p.name} variants={{
-            hidden: { opacity: 0, y: 50, scale: 0.9 },
+            hidden: { opacity: 0, y: 10, scale: 0.9 },
             visible: { opacity: 1, y: 0, scale: 1, transition: { type: "spring", stiffness: 100 } }
-          }}>
-            <div style={{
-              textAlign: "center", marginBottom: "0.75rem",
-              fontFamily: "var(--font-heading)", fontSize: "0.7rem",
-              letterSpacing: "0.2em", textTransform: "uppercase",
-              color: "var(--color-text-muted)",
-            }}>
-              {p.category}
-            </div>
-            <motion.div 
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.98 }}
-              className="sponsor-card" 
-              style={{ minHeight: 100, cursor: "pointer" }}
-            >
+          }}
+          style={{ display: "flex", alignItems: "center", cursor: "pointer" }}
+          >
+            {p.logo ? (
+              <div style={{ textAlign: "center" }}>
+                <img 
+                  src={p.logo} 
+                  alt={`${p.name} logo`}
+                  width={120}
+                  height={80}
+                  style={{ objectFit: 'contain' }}
+                />
+              </div>
+            ) : (
               <div style={{
-                background: "#fff", borderRadius: 8, padding: "0.8rem 1.5rem",
+                background: "#fff", 
+                borderRadius: 8, 
+                padding: "0.8rem 1.5rem",
                 display: "inline-block",
+                textAlign: "center",
+                minWidth: "120px"
               }}>
                 <span style={{
-                  fontFamily: "var(--font-heading)", fontSize: "1.2rem",
-                  fontWeight: 700, color: "#333",
+                  fontFamily: "var(--font-heading)", 
+                  fontSize: "1.2rem",
+                  fontWeight: 700, 
+                  color: "#333",
                 }}>
                   {p.name}
                 </span>
               </div>
-            </motion.div>
+            )}
           </motion.div>
         ))}
       </motion.div>
-
-
     </section>
-  );
+    );
 }
