@@ -14,7 +14,7 @@ export default function UpcomingPage() {
 
   useEffect(() => {
     // Target date: April 7, 2026
-    const targetDate = new Date("2026-04-07T23:59:59+05:30").getTime();
+    const targetDate = new Date("2026-04-06T23:59:59+05:30").getTime();
 
     const updateTimer = () => {
       const now = new Date().getTime();
