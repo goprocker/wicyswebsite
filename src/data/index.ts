@@ -121,7 +121,7 @@ export const teamMembers: TeamMember[] = [
     name: "Lakshitha S",
     role: "Vice President",
     bio: "Third year student with expertise in digital forensics and incident response. Certified in CompTIA Security+.",
-    linkedin: "https://linkedin.com",
+    linkedin: "https://www.linkedin.com/in/slakshitha/",
     category: "leadership",
   },
   {
@@ -129,7 +129,7 @@ export const teamMembers: TeamMember[] = [
     name: "Dharani A",
     role: "Secretary",
     bio: "Keeps the chapter organized and running efficiently, managing communications and documentation with precision.",
-    linkedin: "https://linkedin.com",
+    linkedin: "https://www.linkedin.com/in/dharani-alagarsamy-70589a352/",
     category: "core",
   },
   {
@@ -137,7 +137,7 @@ export const teamMembers: TeamMember[] = [
     name: "Samyuktha M",
     role: "Joint Secretary",
     bio: "Assists in administrative duties and bridges communication across chapter teams for seamless coordination.",
-    linkedin: "https://linkedin.com",
+    linkedin: "https://www.linkedin.com/in/samyuktha-m-8175a92a7/",
     category: "core",
   },
   {
@@ -145,7 +145,7 @@ export const teamMembers: TeamMember[] = [
     name: "Hadlins Price H",
     role: "Treasurer",
     bio: "Manages chapter finances responsibly, ensuring resources are allocated effectively for maximum community impact.",
-    linkedin: "https://linkedin.com",
+    linkedin: "https://www.linkedin.com/in/h-hadlins-price-49818b327/",
     category: "core",
   },
 
@@ -179,7 +179,7 @@ export const teamMembers: TeamMember[] = [
     name: "Sanjeevini K B",
     role: "Management Team Lead",
     bio: "Oversees chapter operations and team coordination, ensuring every initiative runs smoothly and on schedule.",
-    linkedin: "https://linkedin.com",
+    linkedin: "https://www.linkedin.com/in/sanjeevini-kumaravel-72bb2437a?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
     category: "lead",
   },
    {
@@ -203,7 +203,7 @@ export const teamMembers: TeamMember[] = [
      name: "Muthu Lakshmanan",
      role: "Event Coordinator",
      bio: "2nd year student assisting with event planning and coordination.",
-     linkedin: "https://linkedin.com",
+     linkedin: "https://www.linkedin.com/in/muthu-lakshmanan-s-a32827323?utm_source=share_via&utm_content=profile&utm_medium=member_android",
      category: "coordinator",
    },
    {
