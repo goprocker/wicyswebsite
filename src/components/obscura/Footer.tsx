@@ -73,11 +73,11 @@ export default function Footer() {
                 <Mail size={18} />
                 sistwicys@gmail.com
               </a>
-              <a href="tel:+919391131165" style={{
+              <a href="tel:+9150225961" style={{
                 display: "flex", alignItems: "center", gap: "1rem", color: "var(--color-text-secondary)", textDecoration: "none", fontSize: "0.9rem", transition: "color 0.3s"
               }}>
                 <Phone size={18} />
-                +91 93911 31165
+                +91 9150225961, +91 6369113218 
               </a>
               <div style={{
                 display: "flex", alignItems: "flex-start", gap: "1rem", color: "var(--color-text-secondary)", fontSize: "0.9rem", lineHeight: "1.6"

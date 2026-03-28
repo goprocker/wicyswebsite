@@ -187,7 +187,7 @@ export default function Home() {
                 textTransform: "uppercase",
               }}>
                 <span>📍</span>
-                <span>Sathyabama Institute, Chennai</span>
+                <span>Sathyabama Institute of Science and Technology, Chennai</span>
               </div>
             </div>
             
@@ -211,7 +211,7 @@ export default function Home() {
              style={{ marginTop: "2rem" }}
            >
              <a
-               //href="https://docs.google.com/forms/d/e/1FAIpQLSdnJAA2mZ2gkSvCnmJVnFIskNTadKVgFhnb2nWl01rmhbvF4A/viewform"
+               href="https://docs.google.com/forms/d/e/1FAIpQLSffz93BunAfJZpZ77awTWiuEhx9R5FMeuzMt4R9-wGAdTTUew/viewform?usp=send_form"
                target="_blank"
                rel="noopener noreferrer"
                style={{
@@ -325,7 +325,7 @@ export default function Home() {
               <motion.a 
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="https://docs.google.com/forms/d/e/1FAIpQLSdnJAA2mZ2gkSvCnmJVnFIskNTadKVgFhnb2nWl01rmhbvF4A/viewform" target="_blank" rel="noopener noreferrer" className="btn-primary btn-outline" style={{ borderImage: "linear-gradient(135deg, #FF8C00, #c41e3a) 1" }}>
+                href="https://docs.google.com/forms/d/e/1FAIpQLSffz93BunAfJZpZ77awTWiuEhx9R5FMeuzMt4R9-wGAdTTUew/viewform?usp=send_form" target="_blank" rel="noopener noreferrer" className="btn-primary btn-outline" style={{ borderImage: "linear-gradient(135deg, #FF8C00, #c41e3a) 1" }}>
                 REGISTER NOW
               </motion.a>
               <motion.a 
@@ -403,7 +403,7 @@ export default function Home() {
           
           <div style={{ display: "block", background: "white", padding: "8px", borderRadius: "12px" }}>
             <Image 
-              src="/ctf/qrcode.jpg" 
+              src="/ctf/ObscuraQR Code.png" 
               alt="Register QR Code" 
               width={250} 
               height={250}
@@ -424,7 +424,7 @@ export default function Home() {
         <motion.a 
           whileHover={{ scale: 1.1, boxShadow: "0 0 30px rgba(212, 138, 32, 0.5)" }}
           whileTap={{ scale: 0.95 }}
-          href="https://docs.google.com/forms/d/e/1FAIpQLSdnJAA2mZ2gkSvCnmJVnFIskNTadKVgFhnb2nWl01rmhbvF4A/viewform"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSffz93BunAfJZpZ77awTWiuEhx9R5FMeuzMt4R9-wGAdTTUew/viewform?usp=send_form"
           target="_blank"
           rel="noopener noreferrer"
           className="btn-primary"
@@ -449,7 +449,7 @@ export default function Home() {
           textAlign: "center",
           wordBreak: "break-all"
         }}>
-          https://docs.google.com/forms/d/e/1FAIpQLSdnJAA2mZ2gkSvCnmJVnFIskNTadKVgFhnb2nWl01rmhbvF4A/viewform
+          
         </div>
       </motion.section>
 

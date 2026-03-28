@@ -49,7 +49,7 @@ export default function BackgroundMusic() {
 
   return (
     <>
-      <audio ref={audioRef} loop src="/ctf/harrypotertheme.mp3" preload="none" />
+      <audio ref={audioRef} loop src="/ctf/ObscuraThemeSong.mp3" preload="none" />
       <button 
         onClick={toggleMute}
         style={{

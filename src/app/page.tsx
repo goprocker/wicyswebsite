@@ -184,7 +184,7 @@ export default function HomePage() {
               <div className="flex flex-wrap gap-5 mb-8" style={{ color: "#6b7280", fontSize: "13px" }}>
                 <span>📅 April 10, 2026</span>
                 <span>🕘 9:00 AM – 6:00 PM</span>
-                <span>📍 Sathyabama Institute, Chennai</span>
+                <span>📍 Sathyabama Institute of Science and Technology, Chennai</span>
               </div>
               <div className="flex flex-wrap gap-4">
                 <Link
@@ -196,7 +196,7 @@ export default function HomePage() {
                   <ArrowRight className="w-4 h-4" />
                 </Link>
                 <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSdnJAA2mZ2gkSvCnmJVnFIskNTadKVgFhnb2nWl01rmhbvF4A/viewform"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSffz93BunAfJZpZ77awTWiuEhx9R5FMeuzMt4R9-wGAdTTUew/viewform?usp=send_form"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold text-sm"
@@ -228,7 +228,7 @@ export default function HomePage() {
               Whether you&apos;re a beginner or an experienced practitioner, WiCyS Sathyabama welcomes you. Join our community of changemakers today.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <a href="mailto:wicys@sathyabama.ac.in" className="btn-primary">
+              <a href="mailto:sistwicys@gmail.com" className="btn-primary">
                 Join Our Community
                 <ArrowRight className="w-4 h-4" />
               </a>

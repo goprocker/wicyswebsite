@@ -13,8 +13,8 @@ export default function UpcomingPage() {
   const [timeLeft, setTimeLeft] = useState<TimeLeft>({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
   useEffect(() => {
-    // Target date: April 10, 2026
-    const targetDate = new Date("2026-04-10T09:00:00+05:30").getTime();
+    // Target date: April 7, 2026
+    const targetDate = new Date("2026-04-06T23:59:59+05:30").getTime();
 
     const updateTimer = () => {
       const now = new Date().getTime();
@@ -140,7 +140,7 @@ export default function UpcomingPage() {
                       </svg>
                     </Link>
                     <a
-                      href="https://docs.google.com/forms/d/e/1FAIpQLSdnJAA2mZ2gkSvCnmJVnFIskNTadKVgFhnb2nWl01rmhbvF4A/viewform"
+                      //href="https://docs.google.com/forms/d/e/1FAIpQLSdnJAA2mZ2gkSvCnmJVnFIskNTadKVgFhnb2nWl01rmhbvF4A/viewform"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-semibold text-sm transition-all"
