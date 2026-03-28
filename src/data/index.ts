@@ -29,7 +29,7 @@ export const events: Event[] = [
     description:
       "A comprehensive workshop on fundamental cybersecurity concepts!",
     status: "past",
-    image: "/event/sentinels.HEIC",
+    image: "/event/sentinels.jpg",
   },
   {
     id: "4",
@@ -111,7 +111,7 @@ export const events: Event[] = [
     date: "Coming Soon",
     description: "A technical deep-dive into malware analysis, reverse engineering, and digital forensics.",
     status: "past",
-    image: "/event/mindexe.HEIC",
+    image: "/event/mindexe.jpg",
   },
   {
     id: "17",
@@ -120,6 +120,7 @@ export const events: Event[] = [
     date: "Coming Soon",
     description: "An interactive workshop on cloud security, database protection, and secure system architecture.",
     status: "past",
+    image: "/event/Oracle.jpg",
   },
 ];
 
